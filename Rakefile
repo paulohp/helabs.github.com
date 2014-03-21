@@ -8,35 +8,37 @@ task :default => :spec
 
 desc 'Push to staging.helabs.com.br'
 task :staging do
-  p '=> Memorizing current branch name...'
+  require 'colored'
+
+  puts '=> Memorizing current branch name...'.magenta
   current_branch = `git branch | grep "*"`.gsub('*', '').strip
 
-  p '=> Remove staging branch...'
+  puts '=> Remove staging branch...'.magenta
   system 'git branch -D staging'
 
-  p '=> Create orphan staging branch...'
+  puts '=> Create orphan staging branch...'.magenta
   system 'git checkout --orphan staging'
 
-  p '=> Disallow robots...'
+  puts '=> Disallow robots...'.magenta
   File.open('robots.txt', 'w') { |file| file.write "User-agent: *\nDisallow: /" }
 
-  p '=> Change CNAME...'
+  puts '=> Change CNAME...'.magenta
   File.open('CNAME', 'w') { |file| file.write 'staging.helabs.com.br' }
 
-  p '=> Add everything...'
+  puts '=> Add everything...'.magenta
   system 'git add --all'
 
-  p '=> Commit everything...'
+  puts '=> Commit everything...'.magenta
   system 'git commit -m "Staging commit"'
 
-  p '=> Add staging remote...'
+  puts '=> Add staging remote...'.magenta
   system 'git remote add staging git@github.com:Helabs/staging.helabs.com.br.git'
 
-  p '=> Force push to staging. Get some coffee, it may take some time...'
+  puts '=> Force push to staging. Get some coffee, it may take some time...'.magenta
   system 'git push -f staging staging:gh-pages'
 
-  p "=> Checkout #{current_branch} branch..."
+  puts "=> Checkout #{current_branch} branch...".magenta
   system "git checkout #{current_branch}"
 
-  p '=> Done. It can take up to 10 minutes for your changes to appear staging.helabs.com.br'
+  puts '=> Done. It can take up to 10 minutes for your changes to appear staging.helabs.com.br'.yellow
 end
