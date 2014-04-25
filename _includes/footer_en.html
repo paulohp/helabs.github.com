@@ -1,15 +1,43 @@
 <footer>
-  {% include offices.html %}
-  <nav class="footer-links">
+  <section>
+    <div class="containner">
+      <div class="our-offices">
+        <ul>
+          <li><a href="/offices/rio/">Rio</a></li>
+          <li><a href="/offices/londrina/">Londrina</a></li>
+          <li><a href="/offices/miami/">Miami</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-footer">
+        <ul>
+          <li><a href="/en/opensource/">Open Source</a></li>
+          <li><a href="/en/community/">Community</a></li>
+          <li><a href="/en/mediakit/">Media Kit</a></li>
+          <li><a href="/blog/" data-no-instant>Blog</a></li>
+          <li><a href="/en/contact/">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <div class="containner">
       <p>&copy; {{ site.time | date: '2011/%Y' }} HE:labs.</p>
-      <ul>
-        <li><a href="/en/opensource/">Open Source</a></li>
-        <li><a href="/en/community/">Community</a></li>
-        <li><a href="/en/mediakit/">Media Kit</a></li>
-        <li><a href="/blog/" data-no-instant>Blog</a></li>
-        <li><a href="/en/contact/">Contact us</a></li>
+      <ul class="social-he">
+        <li>
+          <a href="https://github.com/Helabs" class="social-github" rel="nofollow external">Github</a>
+        </li>
+        <li>
+          <a href="https://dribbble.com/helabs" class="social-dribbble" rel="nofollow external">Dribble</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/helabs" class="social-twitter" rel="nofollow external">Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/helabsoficial" class="social-youtube" rel="nofollow external">Youtube</a>
+        </li>
       </ul>
     </div>
-  </nav>
+  </section>
 </footer>

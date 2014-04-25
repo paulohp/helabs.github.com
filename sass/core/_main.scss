@@ -317,110 +317,102 @@ Privacy
 }
 
 
+
+
 /* Footer */
 
-footer {
-  border-top: 1px solid #fff;
-  width: 100%;
-  background-color: $grey4;
-  padding: 30px 0 85px 0;
-  font-size: $font-medium;
-  position: relative;
-  clear: both;
 
-  a {
-    text-decoration: none;
-    color: #ccc;
-
-    &:hover {
-      opacity: 1;
-      color: #fff;
-    }
-  } // a
+footer section:first-child {
+  background: #1E1E1E;
+  height: 120px;
 }
 
-.tel {
-  @include round_borders (2px);
-  height: 25px;
-  line-height: 25px;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 0 5px 0 5px;
-  margin-top: 5px;
-  color: #fff;
-  clear: both;
+footer section:last-child {
+  background: #232323;
+  height: 50px;
 }
 
-.offices {
-  overflow: hidden;
+footer section:first-child .our-offices {
+  float: left;
+  width: 25%;
 
-  li {
-  	width: 25%;
-    line-height: 17px;
-    font-size: $font-small;
+  ul {
     float: left;
-  }
+    margin-top: 55px;
 
-  address span { display: block; }
+    li {
+      float: left;
+      margin-right: 20px;
 
-  h3 {
-    text-transform: uppercase;
-    margin: 13px 0 7px 0;
-    color: #fff;
-  }
-
-  li.social-he-links {
-
-    a {
-      display: block;
-      width: 100%;
-      background: url("/images/icons/profile-social.png") no-repeat;
-      color: #8E8C8E;
-      text-align: left;
-      height: 30px;
-      margin-bottom: 5px;
-      line-height: 30px;
-      padding-left: 40px;
-      text-align: left;
-      text-decoration: none;
-
-      &.github {
-        background-position: 0 -60px;
-      }
-
-      &.dribble {
-        background-position: 0 -30px;
-      }
-
-      &.twitter {
-        background-position: 0 0;
+      a {
+        color: $grey3;
+        text-decoration: none;
+        text-transform: uppercase;
       }
     }
   }
 }
 
-.footer-links {
-  width: 100%;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 12px 0 12px 0;
-  color: #fff;
-  position: absolute;
-  margin: 0;
-  bottom: 0;
-  left: 0;
+footer section:first-child .nav-footer {
+  float: left;
+  width: 75%;
+
+  ul {
+    float: right;
+    margin-top: 55px;
+
+    li {
+      float: left;
+      margin-left: 25px;
+
+      a {
+        color: #CCCCCC;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+footer section:last-child {
 
   p {
-    margin: 0;
     float: left;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: $grey3;
+    font-weight: 300;
+    text-align: left;
   }
 
-  ul { float: right; }
+  ul.social-he {
+    float: right;
+    right: 50%;
+    margin-top: 15px;
 
-  li {
-    margin-left: 20px;
-    display: inline-block;
+    li {
+      float: left;
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: $grey3;
+        font-weight: 300;
+
+        &:hover {
+          color: $grey2;
+        }
+      }
+
+      a.social-twitter:hover { color: #00ACEE; }
+      a.social-github:hover { color: #CCC; }
+      a.social-dribbble:hover { color: #EA4C89; }
+      a.social-youtube:hover { color: #E52D27; }
+    }
   }
 }
+
 
 
 /* Webkit Hacks  */
