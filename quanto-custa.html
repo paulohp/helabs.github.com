@@ -17,24 +17,25 @@ en: /en/work/
     <li class="odd-work">
       <div class="containner">
         <p class="lead">
-          <span>One of our big specialties is integrating systems. </span>When ESPN Brazil, a giant in
-          sports journalism, approached us to build their first mobile portal, it was a
-          a huge chance to write some history. We ended up developing and integrating an entirely new mobile application within their existing CMS system in record time.
-        </p>
-      </div>
-    </li>
-    <li class="even-work">
-      <div class="containner">
-        <img class="process-img" src="/images/cases/espn-mobile/process.png" id="no-float" alt="Processo">
-      </div>
-    </li>
-    <li class="odd-work">
-      <img src="/images/cases/espn-mobile/1.png" class="step-number" alt="1">
-      <div class="containner">
-        <img src="/images/cases/espn-mobile/icon1.png" width="202" height="192" alt="Icon1">
-          <p>Already on the first week's iteration, we created a functional version of the site
-          and developed a web service to exchange information, like data and files, between
-          the different systems.</p>
+          <p>
+          <label for="amount">Ahhhh:</label>
+          <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+          </p>
+          <div id="slider-range-max"></div>
+          <script>
+          $(function() {
+          $( "#slider-range-max" ).slider({
+          range: "max",
+          min: 1,
+          max: 10,
+          value: 2,
+          slide: function( event, ui ) {
+          $( "#amount" ).val( ui.value );
+          }
+          });
+          $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+          });
+          </script>
         </p>
       </div>
     </li>
