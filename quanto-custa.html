@@ -43,7 +43,25 @@ en: /en/work/
       <img src="/images/cases/espn-mobile/2.png" class="step-number" alt="2">
       <div class="containner">
         <img src="/images/cases/espn-mobile/icon2.png" width="202" height="221" alt="Icon2">
-        <p>After 3 weeks of work, there were two complete solutions deployed to production supporting millions of visitors simultaneously, with no client IT involvement.</p>
+<p>
+<label for="spinner">Select a value:</label>
+<input id="spinner" name="value">
+</p>
+ <script>
+$(function() {
+$( "#spinner" ).spinner({
+spin: function( event, ui ) {
+if ( ui.value > 100 ) {
+$( this ).spinner( "value", -99 );
+return false;
+} else if ( ui.value < -99 ) {
+$( this ).spinner( "value", 100 );
+return false;
+}
+}
+});
+});
+</script>
       </div>
     </li>
     <li class="odd-work">
