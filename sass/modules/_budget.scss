@@ -17,20 +17,6 @@ Budget Mobile
     text-align: center;
   }
 
-  .lead {
-    color: #333;
-    font-size: $font-large;
-    font-weight: lighter;
-    margin-left: 0 !important;
-    text-align: center !important;
-    line-height: 33px;
-    float: none;
-
-    span {
-      font-weight: bold;
-    }
-  }
-
   li {
     width: 100%;
     padding: 50px 0 50px 0;
@@ -40,83 +26,7 @@ Budget Mobile
   li:nth-child(odd) { background: $light-grey1; }
   li:nth-child(even) { background: #fff; }
 
-  .work-thumb {
-    @include round_borders (4px);
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    box-shadow: 0 0 7px #e2e2e2;
-    width: 400px;
-    background: $light-grey2;
-    border: 1px solid $grey2;
-    padding: 6px 5px 0 5px;
-
-    img {
-      @include round_borders (2px);
-      width: 99.6%;
-      border: 1px solid $grey2;
-      border-bottom: none;
-      float: left;
-    }
-  }
-
-  #no-float {
-    float: none;
-  }
 
 }
 
-.process-img {
-  margin-bottom: 30px;
-}
 
-.case-logos {
-  margin-top: 20px;
-}
-
-.browser-nav {
-  border: 1px solid $grey2;
-  background: #fff;
-  @include round_borders (2px);
-  margin-bottom: 5px;
-  height: 25px;
-}
-
-#budget {
-
-  .odd-work img { float: left; }
-  .even-work img { float: right; }
-  
-  .odd-work p,
-  .even-work p {
-    font-size: $font-medium2;
-    line-height: 28px;
-  }
-  
-  .odd-work p { 
-    margin-left: 350px;
-    text-align: left;
-  }
-
-  .even-work p {
-    margin-right: 350px;
-    text-align: right;
-  }
-  
-  .work-info {
-
-    h3 {
-      font-size: $font-big;
-      font-weight: 900;
-      color: #000;
-      margin: 0 0 15px 0;
-    }
-
-    p {
-      font: normal $font-medium $sans_serif;
-      line-height: 27px;
-      margin: 0 0 15px 0;
-    }
-  }
-
-}
