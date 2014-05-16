@@ -65,12 +65,25 @@ return false;
       </div>
     </li>
     <li class="odd-work">
-      <img src="/images/cases/espn-mobile/3.png" class="step-number" alt="3">
-      <div class="containner">
-        <img src="/images/cases/espn-mobile/icon3.png" width="202" height="221" alt="Icon3">
-        <p>The web service also had a great benefit: it ended up turning into a commercial solution
-        for distributing content to other devices, like smart-TVs.</p>
-      </div>
+<form method="post">
+<div id="itemRows">
+
+Item quantity: <input type="text" name="add_qty" size="4" /> Item name: <input type="text" name="add_name" /> <input onclick="addRow(this.form);" type="button" value="Add row" />
+
+</div>
+</form>
+
+<script>
+var rowNum = 0;
+function addRow(frm) {
+rowNum ++;
+var row = '<p id="rowNum'+rowNum+'">Item quantity: <input type="text" name="qty[]" size="4" value="'+frm.add_qty.value+'"> Item name: <input type="text" name="name[]" value="'+frm.add_name.value+'"> <input type="button" value="Remove" onclick="removeRow('+rowNum+');"></p>';
+jQuery('#itemRows').append(row);
+frm.add_qty.value = '';
+frm.add_name.value = '';
+}
+</script>
+
     </li>
     <li class="even-work">
       <img src="/images/cases/espn-mobile/4.png" class="step-number" alt="4">
