@@ -48,17 +48,19 @@ Budget Mobile
     .ui-widget-content{
       background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
       border: medium none;
-      height: 120px;
+      height: 130px;
     }
     #spinner{
-      background: none repeat scroll 0 0 #000000;
-      color: #FFFFFF;
+      background: url("../images/clockbg.jpg");
+      color: #eefdc4;
+      font-family: 'digital_dream_fatregular';
       font-size: 85px;
-      height: 89px;
+      height: 100px;
       margin: 0;
       padding: 15px;
-      width: 140px;
-      font-family: 'digital_dream_fatregular';
+      text-align: left;
+      text-shadow: 1px 0 30px #C10D28, 1px 2px 35px #EEFDC4;
+      width: 232px;
     }
     .ui-spinner-up{
       background: red;
