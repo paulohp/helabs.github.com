@@ -590,6 +590,7 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner {
 .ui-slider-vertical .ui-slider-range-max {
     top: 0;
 }
+// SPINNER ==================================
 .ui-spinner {
     display: inline-block;
     overflow: hidden;
@@ -638,6 +639,10 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner {
 .ui-spinner .ui-icon-triangle-1-s {
     background-position: -65px -16px;
 }
+
+// END OF SPINNER ==================================
+
+
 .ui-tabs {
     padding: 0.2em;
     position: relative;
