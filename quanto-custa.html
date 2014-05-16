@@ -16,38 +16,13 @@ en: /en/work/
   <ul>
     <li class="odd-work">
       <div class="containner">
-        <div class="work-thumb">
-          <div class="browser-nav"></div>
-          <img src="/images/works/atendesimples.jpg" alt="Atende Simples">
-        </div>
-        <div class="work-info">
-          <h3>Atende Simples</h3>
-          <p>
-          <script>
-          $(function() {
-          $( "#slider-range-max" ).slider({
-          range: "max",
-          min: 1,
-          max: 10,
-          value: 2,
-          slide: function( event, ui ) {
-          $( "#amount" ).val( ui.value );
-          }
-          });
-          $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
-          });
-          </script>
-          
-          <p>
-          <label for="amount">Minimum number of bedrooms:</label>
-          <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-          </p>
-          <div id="slider-range-max"></div>
-          </p>
-          <a href="/trabalhos/atende-simples/" class="more">Saiba Mais</a>
-          <a href="/cases/atende-simples/" class="more">Veja a história</a>
-        </div>
+        <p class="lead">
+          <span>One of our big specialties is integrating systems. </span>When ESPN Brazil, a giant in
+          sports journalism, approached us to build their first mobile portal, it was a
+          a huge chance to write some history. We ended up developing and integrating an entirely new mobile application within their existing CMS system in record time.
+        </p>
       </div>
+    </li>
     <li class="even-work">
       <div class="containner">
         <img class="process-img" src="/images/cases/espn-mobile/process.png" id="no-float" alt="Processo">
@@ -102,27 +77,7 @@ en: /en/work/
       </div>
     </li>
   </ul>
-  </div>
-</section><!-- /works second level -->
+</section> <!-- /espn-mobile -->
 
 
-<section id="work-mvp">
-  <div class="containner">
-    <h3>Além dos projetos continuados acima, nós já desenvolvemos um total de mais de {{ site.data.mvp.number_of_projects }} projetos.</h3>
-    <ul>
-      {% for project in site.data.mvp.projects %}
-      <li><p>{{ project.name }}</p></li>
-      {% endfor %}
-    </ul>
-  </div>
-</section> <!-- /works MVP -->
 
-<div class="bottom-nav">
-  <a class="red-button" href="/magica/">
-	  Entenda nossa metodologia
-  </a>
-</div>
-
-<script type="text/javascript">
-  mixpanel.track_links(".red-button", "Clicked - Entenda nossa Metodologia");
-</script>
