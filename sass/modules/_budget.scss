@@ -91,4 +91,19 @@ Budget Mobile
   
 } // End of budget's page classes
 
+// layer specific classes
+
+#step1_title{
+  background: url("../images/budget/step1_title.png");
+  background-repeat: no-repeat;
+  font-size: 32px;
+  height: 183px;
+  padding-left: 92px;
+  padding-top: 6px;
+  width: 505px;
+  span{
+    color: #B80606;
+  }
+}
+
 
