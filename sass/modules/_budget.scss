@@ -52,23 +52,26 @@ Budget Mobile
   
   #period{
     .ui-widget-content{
-      background: url("../images/clock.jpg");
+      background: url("../images/budget/clock_bg.png");
+      background-size: 100%;
       border: medium none;
       height: 204px;
       padding: 13px 0 0 19px;
       text-align: left;
       width: 379px;
     }
+    
     #spinner{
-      background: url("../images/clockbg.jpg");
+      background: url("../images/budget/clock_screen.png");
       color: #EEFDC4;
       font-family: 'digital_dream_fatregular';
       font-size: 85px;
       height: 125px;
       margin: 13px 10px 10px;
-      padding: 19px 16px 16px;
+      padding: 0;
+      text-indent: 15px;
       text-align: left;
-      text-shadow: 1px 0 30px #C10D28, 2px 0px 10px #EEFDC4;
+      text-shadow: 1px 0 30px #d6d9de, 2px 0 10px #EEFDC4;
       width: 244px;
     }
     .ui-spinner-up{

@@ -25,39 +25,76 @@ en: /en/work/
 
 				<!-- slide background image -->
 
-				<img src="/images/budget/jellyfish-blur.jpg" class="ls-bg" alt="Slide background"/>
+				<img src="/images/budget/step1_bg.jpg" class="ls-bg" alt="Slide background"/>
 
 				<!-- layer one -->
+  			<h2 class="ls-l" style="left: 600px; top: 211px; z-index: 99999999999" id="period" data-ls="
+  					offsetxin: right;
+  					offsetxout: right;
+  					offsetyin: bottom;
+  					offsetyout: bottom;
+  					fadein: false;
+  					fadeout: false;
+  					easingin: easeoutquart;
+  					easingout: easeinquart;
+  					durationin: 2500;
+  					delayin: 500;
+  				">
+          
+            <input id="spinner" name="value">
+            </input>
+             <script>
+              $(function() {
+              $( "#spinner" ).spinner({
+              spin: function( event, ui ) {
+              if ( ui.value > 100 ) {
+              $( this ).spinner( "value", 1 );
+              return false;
+              } else if ( ui.value < 1 ) {
+              $( this ).spinner( "value", 100 );
+              return false;
+              }
+              }
+              });
+              });
+            </script>
 
-				<h1 class="ls-l" style="top: 100px; left: 100px;" data-ls="
-					offsetxin: 0;
-					offsetxout: 300;
-					offsetyin: top;
-					offsetyout: 300;
-					durationin: 2000;
-					durationout: 2000;
-					delayin: 2000;
-					rotateyin: 60;
-				">It's a clownfish!</h1>
+        </h2>
+        <!-- layer 3 -->
 
-				<!-- layer two -->
-
-				<img class="ls-l" style="left: 30%; top: 50%;" src="/images/budget/clownfish.png" alt="Image layer" data-ls="
+				<img class="ls-l" style="left: 900px; top: 163px" src="/images/budget/step1_lamp.png" alt="Image layer" data-ls="
 					offsetxin: left;
 					offsetxout: right;
-					offsetyin: 150;
-					offsetyout: -250;
+					offsetyin: bottom;
+					offsetyout: bottom;
 					fadein: false;
 					fadeout: false;
 					easingin: easeoutquart;
 					easingout: easeinquart;
 					durationin: 2500;
-					durationout: 2500;
+					delayin: 600;
+				">
+
+				<!-- layer two -->
+        
+
+				<img class="ls-l" style="right: 0px; bottom: 0px" src="/images/budget/step1_table.png" alt="Image layer" data-ls="
+					offsetxin: right;
+					offsetxout: right;
+					offsetyin: bottom;
+					offsetyout: bottom;
+					fadein: false;
+					fadeout: false;
+					easingin: easeoutquart;
+					easingout: easeinquart;
+					durationin: 2500;
 					delayin: 500;
-					showuntil: 1;
 				">
 
 			</div>
+      
+      
+      
 
 			<!-- slide one end -->
 
@@ -85,11 +122,9 @@ en: /en/work/
 
 				<img class="ls-l" style="left: 650px; top: 70px;" src="/images/budget/tucan.png" alt="Image layer" data-ls="
 					offsetxin: right;
-					offsetxout: 0;
-					offsetyin: 200;
+					offsetxout: left;
+					offsetyin: bottom;
 					offsetyout: bottom;
-					rotatein: 50;
-					rotateout: -20;
 					fadein: false;
 					fadeout: false;
 					easingin: easeoutquart;
@@ -120,7 +155,7 @@ en: /en/work/
   
        <!-- /layer slider tests-->
   
-  <!-- <ul>
+  <ul>
     <li class="even-work" id="period">
       <img src="/images/cases/espn-mobile/1.png" class="step-number" alt="1">
       <div class="containner">
@@ -128,7 +163,7 @@ en: /en/work/
           <p>
 
           <input id="spinner" name="value">
-          </p>
+          <!-- </p>
            <script>
           $(function() {
           $( "#spinner" ).spinner({
@@ -143,7 +178,7 @@ en: /en/work/
           }
           });
           });
-          </script>
+          </script> -->
       </div>
     </li>
     
@@ -255,7 +290,7 @@ en: /en/work/
   
     </li>
   </ul>
-   -->
+  
 
   
 </section> <!-- /espn-mobile -->
