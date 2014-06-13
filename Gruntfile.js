@@ -18,6 +18,9 @@ module.exports = function(grunt) {
           'javascripts/application.min.js': [
             'javascripts/source/handlebars-v1.3.0.js',
             'javascripts/source/instantclick.min.js',
+            'javascripts/source/jquery.cycle2.js',
+            'javascripts/source/jquery.cycle2.carousel.js',
+            'javascripts/source/jquery.cycle2.swipe.js',
             'javascripts/source/jquery.localScroll.js',
             'javascripts/source/jquery.maskedinput.js',
             'javascripts/source/jquery.prettyPhoto.js',
