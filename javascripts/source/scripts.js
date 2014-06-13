@@ -219,7 +219,40 @@ var App = {
         }
       }
     });
-    
+
+
+    var t = {
+      $el: $("#carousel-slider .slideshow"),
+      clickImage: function (e) {
+        var t = $(e.target),
+            n = t.index(),
+            i = t.parent().find(".cycle-slide-active").index();
+        return this.cycle(n == i ? "prev" : "next"), !1
+      },
+      makeFirstSlideCentered: function () {
+          this.$el.prepend(this.$el.find("img:last").remove())
+      },
+      init: function () {
+          this.makeFirstSlideCentered(), this.$el.cycle({
+            fx: "carousel",
+            paused: !0,
+            carouselVisible: 3,
+            carouselFluid: !0,
+            swipe: !0
+          }), this.$el.on("click", "img", $.proxy(this.clickImage, this.$el)).find("img").css("opacity", "")
+      }
+    };
+    t.init();
+
+
+    /* Slider for work page */
+    // $('.slideshow').cycle({
+    //   fx: "carousel",
+    //   timeout: 1000,
+    //   carouselVisible: 3,
+    //   carouselFluid: true
+    // });
+
 
     /* Services */
 
@@ -236,22 +269,22 @@ var App = {
       $(".service-02").find(".service-entry").hide();
       $(".service-03").find(".service-entry").show();
     });
-    
+
     $(".service-03 a").click(function() {
       $(".service-03").find(".service-entry").hide();
       $(".service-04").find(".service-entry").show();
     });
-    
+
     $(".service-04 a").click(function() {
       $(".service-04").find(".service-entry").hide();
       $(".service-05").find(".service-entry").show();
     });
-    
+
     $(".service-05 a").click(function() {
       $(".service-05").find(".service-entry").hide();
       $(".service-06").find(".service-entry").show();
     });
-    
+
     $(".service-06 a").click(function() {
       $(".service-06").find(".service-entry").hide();
       $(".service-07").find(".service-entry").show();
@@ -392,7 +425,7 @@ var App = {
 BlogPosts = {};
 
 BlogPosts.init = function () {
-  if (location.pathname === "/" || location.pathname === "/en/") { 
+  if (location.pathname === "/" || location.pathname === "/en/") {
     this.container = '.our-blog';
     this.template = Handlebars.compile($('#blog-posts').hide().html());
     this.render();
@@ -409,7 +442,7 @@ BlogPosts.fetch = function() {
       date.getFullYear();
   }
   function normalizeToJson(atom) {
-    return $(atom).find('entry').map(function() { 
+    return $(atom).find('entry').map(function() {
       var $entry = $(this);
       return {
         title: $entry.find('title').text(),
