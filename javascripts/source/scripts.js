@@ -221,6 +221,7 @@ var App = {
     });
 
 
+    /* Work cycle */
     var t = {
       $el: $("#carousel-slider .slideshow"),
       clickImage: function (e) {
