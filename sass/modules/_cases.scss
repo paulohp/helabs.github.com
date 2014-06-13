@@ -6,23 +6,24 @@ Cases
 ==================== */
 
 .case-hero {
-  margin-top: 80px;
+  margin: 80px 0 10px;
   overflow: hidden;
   background: $he_red;
-  border-bottom: 10px solid $light-grey2;
 
   article {
-    margin-top: 50px;
+    padding: 30px 0;
     width: 50%;
     float: left;
 
     h2 {
-      font-size: 48px;
+      font-size: 36px;
       color: #fff;
+      text-transform: uppercase;
+      font-weight: normal;
     }
 
     p {
-      margin-top: 12px;
+      margin: 0;
       font-size: $font-medium2;
       color: #fff;
     }
@@ -212,3 +213,54 @@ Cases
 
   } // .testimonial
 } // .client
+
+
+#carousel-slider {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  position: relative;
+
+  &:before,
+  &:after {
+    width: 64px;
+    height: 64px;
+    display: block;
+    text-indent: -9999em;
+    content: "";
+    top: 50%;
+    margin-top: -32px;
+    position: absolute;
+    background-size: 64px auto !important;
+    z-index: 100;
+  }
+
+  &:before {
+    left: 70px;
+    background: url("/images/cases/slider-prev.png") 0 0 no-repeat;
+  }
+  &:after {
+    right: 70px;
+    background: url("/images/cases/slider-next.png") 0 0 no-repeat;
+  }
+
+  .slideshow {
+    background: #333;
+    margin: 0 -45%;
+
+    img {
+      opacity: 0.2 !important;
+      -webkit-transition: opacity linear 100ms;
+      -moz-transition: opacity linear 100ms;
+      transition: opacity linear 100ms;
+      cursor: pointer;
+
+      &:hover { opacity: 0.3 !important }
+    }
+
+    .cycle-slide-active+img {
+      opacity: 1 !important;
+      cursor: default;
+    }
+  }
+
+}
