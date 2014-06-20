@@ -6,7 +6,7 @@ permalink: '/en/works/atende-simples/'
 pt: '/trabalhos/atende-simples/'
 
 name: Atende Simples
-project_kind: Atende Simples offers a complete and professional phone customer support for small businesses.
+project_kind: Atende Simples offers a complete and professional phone customer support for businesses.
 image: /images/projects/atendesimples.jpg
 
 project_url: http://www.atendesimples.com/
@@ -25,14 +25,14 @@ what_has_been_done: The AtendeSimples was a case of project that went to "Projet
 
 
 
-customer_experience:
+customer_experience: Atende Simples was officially launched and all goals are being met. New opportunities have been identified to help our customers improve their business, and adjustments are released weekly.
 
-customer_name:
-
+customer_name: Andre, Product Director, Atende Simples
 
 
 project_team:
   - github: eduardofiorezi
+  - github: thiagogabriel
   - github: dirs
   - github: krystalcampioni
   - github: aluisioazevedo

@@ -56,8 +56,8 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 {% if page.video_id or page.customer_experience %}
   <section class="client">
     <div class="containner">
-      <h3>Videos about the project</h3>
       {% if page.video_id %}
+      <h3>Videos about the project</h3>
         <article class="video">
           <div class="video-thumb">
             <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ page.video_id }}" rel="prettyPhoto">
@@ -67,6 +67,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
       {% endif %}
 
       {% if page.customer_experience %}
+        <h3>Customer Testimonial</h3>
         <article class="testimonial">
           <i>{{ page.customer_experience }}</i>
           <em>{{ page.customer_name }}</em>
