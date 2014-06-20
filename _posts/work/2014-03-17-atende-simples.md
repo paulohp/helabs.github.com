@@ -12,6 +12,15 @@ image: /images/projects/atendesimples.jpg
 project_url: http://app.atendesimples.com/
 display_url: atendesimples.com
 
+screenshots:
+  - url: /images/projects/atendesimples.jpg
+    caption: Tela de cadastro do Atende Simples
+  - url: /images/projects/atendesimples.jpg
+    caption: Tela de configuração do primeiro atendente, quem irá receber a chamada
+  - url: /images/projects/atendesimples.jpg
+  - url: /images/projects/atendesimples.jpg
+  - url: /images/projects/atendesimples.jpg
+
 video_id:
 video_image:
 
@@ -32,5 +41,4 @@ project_team:
   - github: krystalcampioni
   - github: aluisioazevedo
   - github: guiloyins
-
 ---

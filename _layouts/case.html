@@ -15,13 +15,9 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 
 <section id="carousel-slider">
   <div class="slideshow">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
+    {% for screenshot in page.screenshots %}
+      <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
+    {% endfor %}
   </div>
 </section>
 
@@ -32,6 +28,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
       <p>{{ page.about }}</p>
       <p>{{ page.status }}</p>
       <p>{{ page.what_has_been_done }}</p>
+      <p>Veja o projeto em ação: <a href="{{ page.project_url }}" targe: "_blank">{{ page.project_url }}</a></p>
     </article>
     <aside>
       {% if page.project_team %}
