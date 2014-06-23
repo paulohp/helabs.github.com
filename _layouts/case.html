@@ -14,11 +14,13 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 </section>
 
 <section id="carousel-slider">
-  <div class="slideshow">
+  <div class="slideshow" data-cycle-next="#next" data-cycle-prev="#prev">
     {% for screenshot in page.screenshots %}
       <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
     {% endfor %}
   </div>
+  <a href="#" id="next"></a>
+  <a href="#" id="prev"></a>
 </section>
 
 <section class="main-infos">
