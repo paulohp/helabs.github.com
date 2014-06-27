@@ -73,11 +73,12 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
   <section class="client">
     <div class="containner">
       {% if page.video_id %}
-      <h3>Videos about the project</h3>
         <article class="video">
+          <h3>Videos about the project</h3>
+
           <div class="video-thumb">
             <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ page.video_id }}" rel="prettyPhoto">
-            <img src="{{ page.video_image }}">
+            <img src="{{ page.video_image }}"></a>
           </div>
         </article>
       {% endif %}
