@@ -161,13 +161,14 @@ Cases
     letter-spacing: 0.04em;
     word-spacing: 0.1em;
     font-weight: 500;
+    margin-bottom: 20px;
   }
 
   article { float: left; }
 
   .video {
     width: 40%;
-    margin-top: 40px;
+    margin-right: 5%;
 
     .video-thumb {
       box-shadow: 0 4px 8px -3px #d8d8d8;
@@ -190,12 +191,10 @@ Cases
   } // .video
 
   .testimonial {
-    margin-top: 10px;
-    width: 60%;
+    width: 55%;
 
     i {
       display: block;
-      margin: 20px 0 0;
       font-size: 16px;
       line-height: 26px;
       color: $grey3;

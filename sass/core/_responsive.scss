@@ -282,17 +282,17 @@ Media Queries for Tablets
 
   .even-work .work-info,
   .even-client .client-info { margin-right: 300px; }
-  
+
 
   /* ESPN Mobile */
-  
+
   #cover-banner-espn {
     width: 100%;
     padding: 30px 0 100px 0;
     margin-bottom: 40px;
     color: #fff;
     float: left;
-  
+
     .iphone {
       margin-top: -50px;
       float: left;
@@ -309,7 +309,7 @@ Media Queries for Tablets
       float: none;
       margin-top: 30px;
       width: 100%;
-    
+
       img {
         float: right;
         margin-left: 20px;
@@ -321,7 +321,7 @@ Media Queries for Tablets
       font-size: 19px;
       width: 100%;
       line-height: 27px;
-    
+
       &:before {
         margin-right: 5px;
         margin-top: -7px;
@@ -334,21 +334,21 @@ Media Queries for Tablets
 
     }
   }
-  
+
   #espn-mobile-infos {
     margin-left: 340px;
   }
-  
+
   .process-img {
     width: 50%;
   }
-  
+
   .case-logos {
     margin-top: 20px;
   }
-  
+
   #espn-mobile {
-    
+
     .lead {
       margin-bottom: 0;
     }
@@ -359,14 +359,14 @@ Media Queries for Tablets
 
     .odd-work img { float: left; }
     .even-work img { float: right; }
-  
+
     .odd-work p,
     .even-work p {
       font-size: $font-medium2;
       line-height: 28px;
     }
-  
-    .odd-work p { 
+
+    .odd-work p {
       margin-left: 250px;
       text-align: left;
     }
@@ -375,7 +375,7 @@ Media Queries for Tablets
       margin-right: 250px;
       text-align: right;
     }
-  
+
     .work-info {
 
       h3 {
@@ -597,7 +597,6 @@ Media Queries for Tablets
 
   section.case-hero {
     article {
-      margin-top: 30px;
       width: 100%;
       float: none;
 
@@ -620,6 +619,15 @@ Media Queries for Tablets
         display: block;
       }
     }
+  }
+
+  #carousel-slider {
+    .slideshow {
+      margin: 0 -70%;
+    }
+
+    #carousel-slider-prev,
+    #carousel-slider-next { display: none !important }
   }
 
   section.main-infos {
@@ -1338,35 +1346,34 @@ Media Queries for Smartphones
       margin: 0 auto 0 auto;
     }
   }
-  
-  
+
+
   /* ESPN Mobile */
-  
   #cover-banner-espn {
     margin-top: 78px;
     padding: 0 0 50px 0;
     height: auto;
-    
+
     .iphone {
       display: none;
     }
   }
-  
+
   #espn-mobile-infos {
     margin-left: 0 !important;
   }
-  
+
   #espn-mobile {
 
     .odd-work img { float: none; }
     .even-work img { float: none; }
-    
+
     .espn-imgs {
       width: 120px;
       margin-bottom: 15px;
     }
-  
-    .odd-work p { 
+
+    .odd-work p {
       margin-left: 0;
     }
 
@@ -1374,11 +1381,11 @@ Media Queries for Smartphones
       margin-right: 0;
       text-align: left;
     }
-    
+
     .process-img {
       width: 290px;
     }
-    
+
     .case-logos {
       width: 200px;
     }
@@ -1387,9 +1394,9 @@ Media Queries for Smartphones
 
 
   /* Services */
-  
+
   .services {
-  
+
     .containner {
       width: 90%;
       padding: 0 5% 0 5%;
@@ -1398,11 +1405,11 @@ Media Queries for Smartphones
     h3 {
       font-size: $font-large !important;
       margin: 0 0 20px 0 !important;
-    
+
       strong {
         display: none;
       }
-    
+
       span {
         margin-left: 0;
       }
@@ -1415,7 +1422,7 @@ Media Queries for Smartphones
     }
 
   }
-  
+
   #to-service-02,
   #to-service-03,
   #to-service-04,
@@ -1545,10 +1552,11 @@ Media Queries for Smartphones
     margin-top: 60px;
 
     article {
-      margin-top: 40px;
+      margin-top: 0;
+
       h2 {
-        font-size: 42px;
-        line-height: 56px;
+        font-size: 32px;
+        line-height: 50px;
       }
 
       p {
@@ -1561,6 +1569,16 @@ Media Queries for Smartphones
       }
     }
   }
+
+  #carousel-slider {
+    .slideshow {
+      margin: 0 -85%;
+    }
+
+    #carousel-slider-prev,
+    #carousel-slider-next { display: none !important }
+  }
+
 
   section.main-infos {
     padding: 40px 0 50px;
@@ -1601,7 +1619,7 @@ Media Queries for Smartphones
 
     article.video {
       width: 100%;
-      margin-top: 20px;
+      margin: 0 0 45px;
 
       .video-thumb {
         width: 70%;
@@ -1612,7 +1630,6 @@ Media Queries for Smartphones
 
     article.testimonial {
       width: 100%;
-      margin-top: 20px;
 
       i {
         width: 100%;
