@@ -13,16 +13,18 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
   </div>
 </section>
 
-<section id="carousel-slider">
-  <div class="slideshow" data-cycle-next="#next" data-cycle-prev="#prev">
-    {% for screenshot in page.screenshots %}
-      <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
-    {% endfor %}
-  </div>
+{% if page.screenshots %}
+  <section id="carousel-slider">
+    <div class="slideshow">
+      {% for screenshot in page.screenshots %}
+        <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
+      {% endfor %}
+    </div>
 
-  <a href="#" id="carousel-slider-prev" class="carousel-slider-nav"></a>
-  <a href="#" id="carousel-slider-next" class="carousel-slider-nav"></a>
-</section>
+    <a href="#" id="carousel-slider-prev" class="carousel-slider-nav"></a>
+    <a href="#" id="carousel-slider-next" class="carousel-slider-nav"></a>
+  </section>
+{% endif %}
 
 <section class="main-infos">
   <div class="containner">
@@ -33,6 +35,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
       <p>{{ page.what_has_been_done }}</p>
       <p>See in action: <a href="{{ page.project_url }}" targe: "_blank">{{ page.project_url }}</a></p>
     </article>
+
     <aside>
       {% if page.project_team %}
         <h3>Team</h3>
@@ -85,7 +88,5 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 {% endif %}
 
 <div class="bottom-nav">
-  <a class="red-button" href="/en/work/">
-    More Projects
-  </a>
+  <a class="red-button" href="/en/work/">More Projects</a>
 </div>
