@@ -231,6 +231,9 @@ Cases
     position: absolute;
     background-size: 64px auto !important;
     z-index: 100;
+    opacity: 0.7;
+
+    &:hover { opacity: 1 }
   }
 
   #carousel-slider-prev {
