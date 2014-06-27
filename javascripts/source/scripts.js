@@ -239,20 +239,13 @@ var App = {
             paused: !0,
             carouselVisible: 3,
             carouselFluid: !0,
-            swipe: !0
+            swipe: !0,
+            next: '#carousel-slider-next',
+            prev: '#carousel-slider-prev'
           }), this.$el.on("click", "img", $.proxy(this.clickImage, this.$el)).find("img").css("opacity", "")
       }
     };
     t.init();
-
-
-    /* Slider for work page */
-    // $('.slideshow').cycle({
-    //   fx: "carousel",
-    //   timeout: 1000,
-    //   carouselVisible: 3,
-    //   carouselFluid: true
-    // });
 
 
     /* Services */
