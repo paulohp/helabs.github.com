@@ -15,13 +15,9 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 
 <section id="carousel-slider">
   <div class="slideshow">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
-    <img src="/images/projects/atendesimples.jpg" alt="test">
+    {% for screenshot in page.screenshots %}
+      <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
+    {% endfor %}
   </div>
 
   <a href="#" id="carousel-slider-prev" class="carousel-slider-nav">
@@ -35,6 +31,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
       <p>{{ page.about }}</p>
       <p>{{ page.status }}</p>
       <p>{{ page.what_has_been_done }}</p>
+      <p>Veja o projeto em ação: <a href="{{ page.project_url }}" targe: "_blank">{{ page.project_url }}</a></p>
     </article>
     <aside>
       {% if page.project_team %}
@@ -66,8 +63,8 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 {% if page.video_id or page.customer_experience %}
   <section class="client">
     <div class="containner">
-      <h3>Vídeos sobre o projeto</h3>
       {% if page.video_id %}
+        <h3>Vídeos sobre o projeto</h3>
         <article class="video">
           <div class="video-thumb">
             <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ page.video_id }}" rel="prettyPhoto">
@@ -77,6 +74,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
       {% endif %}
 
       {% if page.customer_experience %}
+        <h3>Depoimento</h3>
         <article class="testimonial">
           <i>{{ page.customer_experience }}</i>
           <em>{{ page.customer_name }}</em>
