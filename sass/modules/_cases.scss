@@ -6,13 +6,14 @@ Cases
 ==================== */
 
 .case-hero {
-  margin: 80px 0 10px;
+  margin: 80px 0 0;
+  border-bottom: 1px solid $light-grey2;
   overflow: hidden;
   background: $he_red;
 
   article {
     padding: 30px 0;
-    width: 50%;
+    width: 70%;
     float: left;
 
     h2 {
@@ -220,7 +221,7 @@ Cases
   padding-bottom: 10px;
   position: relative;
 
-  a {
+  .carousel-slider-nav {
     width: 64px;
     height: 64px;
     display: block;
@@ -231,13 +232,17 @@ Cases
     position: absolute;
     background-size: 64px auto !important;
     z-index: 100;
+    opacity: 0.7;
+
+    &:hover { opacity: 1 }
   }
 
-  #prev {
+  #carousel-slider-prev {
     left: 70px;
     background: url("/images/cases/slider-prev.png") 0 0 no-repeat;
   }
-  #next {
+
+  #carousel-slider-next {
     right: 70px;
     background: url("/images/cases/slider-next.png") 0 0 no-repeat;
   }
