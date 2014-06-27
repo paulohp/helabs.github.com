@@ -7,9 +7,9 @@ en: '/en/works/atende-simples/'
 
 name: Atende Simples
 project_kind: O Atende Simples permite que qualquer empresa tenha um atendimento telefônico profissional e completo em menos de 10 minutos
-image: /images/projects/atendesimples.jpg
 
 project_url: http://app.atendesimples.com/
+project_case_url: /cases/atende-simples/
 display_url: atendesimples.com
 
 screenshots:

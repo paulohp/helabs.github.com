@@ -10,11 +10,12 @@ project_kind: Atende Simples offers a complete and professional phone customer s
 image: /images/projects/atendesimples.jpg
 
 project_url: http://www.atendesimples.com/
+project_case_url: /en/cases/atende-simples/
 display_url: atendesimples.com
 
 screenshots:
   - url: /images/projects/atendesimples.jpg
-    caption: Company opening hours configuration inside Atende Simples 
+    caption: Company opening hours configuration inside Atende Simples
   - url: /images/projects/atendesimples.jpg
     caption: First attendant configuration, the person who will receive the call
   - url: /images/projects/atendesimples.jpg
