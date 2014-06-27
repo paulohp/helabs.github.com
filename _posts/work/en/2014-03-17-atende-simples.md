@@ -14,13 +14,13 @@ project_case_url: /en/cases/atende-simples/
 display_url: atendesimples.com
 
 screenshots:
-  - url: /images/projects/atendesimples.jpg
-    caption: Company opening hours configuration inside Atende Simples
-  - url: /images/projects/atendesimples.jpg
-    caption: First attendant configuration, the person who will receive the call
-  - url: /images/projects/atendesimples.jpg
-  - url: /images/projects/atendesimples.jpg
-  - url: /images/projects/atendesimples.jpg
+  - url: /images/projects/atende-simples/slider-atende-simples-01.jpg
+    caption: Tela de cadastro do Atende Simples
+  - url: /images/projects/atende-simples/slider-atende-simples-02.jpg
+    caption: Tela de configuração do primeiro atendente, quem irá receber a chamada
+  - url: /images/projects/atende-simples/slider-atende-simples-03.jpg
+  - url: /images/projects/atende-simples/slider-atende-simples-04.jpg
+  - url: /images/projects/atende-simples/slider-atende-simples-05.jpg
 
 video_id: Rp4V3idA0DU
 video_image: /images/customers/andre-dos-santos.jpg
