@@ -13,8 +13,7 @@ Cases
 
   article {
     padding: 30px 0;
-    width: 70%;
-    float: left;
+    position: relative;
 
     h2 {
       font-size: 36px;
@@ -27,6 +26,7 @@ Cases
       margin: 0;
       font-size: $font-medium2;
       color: #fff;
+      width: 60%;
     }
 
     .btn-web {
@@ -143,6 +143,22 @@ Cases
     color: $grey4;
     font-size: $font-small;
   }
+}
+
+.external-link {
+  background: url('/images/external_link.png') 0 center no-repeat;
+  padding-left: 30px;
+  background-size: auto 20px;
+  color: #fff;
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  right: 0;
 }
 
 
